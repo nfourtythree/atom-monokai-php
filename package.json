@@ -1,0 +1,16 @@
+{
+  "name": "atom-monokai-php",
+  "theme": "syntax",
+  "version": "0.0.0",
+  "description": "My own personal monokai theme enhanced for php for the Atom editor.",
+  "keywords": [
+    "syntax",
+    "theme",
+    "atom"
+  ],
+  "repository": "https://github.com/atom/monokai-php-syntax",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}
