@@ -145,12 +145,25 @@ atom-text-editor .search-results .marker.current-result .region,
   &.php {
       color: @white;
   }
+  &.coffee {
+    color: @blue;
+    &.instance, &.assignment {
+      color: @white;
+      font-style: italic;
+    }
+    &.language.this {
+      color: @pink;
+    }
+  }
   &.interpolation {
     color: darken(@red, 10%);
   }
 
   &.parameter.function {
     color: @white;
+    &.coffee {
+      color: @orange;
+    }
   }
 }
 
@@ -160,11 +173,7 @@ atom-text-editor .search-results .marker.current-result .region,
 }
 
 .string {
-  color: @green;
-
-  &.php {
-      color: @yellow;
-  }
+  color: @yellow;
 
   &.regexp {
     color: @cyan;
@@ -225,6 +234,10 @@ atom-text-editor .search-results .marker.current-result .region,
 .support {
   &.class {
     color: @blue;
+    &.coffee {
+      color: @white;
+      font-style: italic;
+    }
   }
 
   &.function  {
@@ -252,15 +265,39 @@ atom-text-editor .search-results .marker.current-result .region,
   &.name.tag {
     color: @navy-blue;
     text-decoration: underline;
+    &.html {
+      color: @pink;
+      font-weight: bold;
+      text-decoration: none;
+    }
   }
 
   &.other.attribute-name {
-    color: @light-purple;
 
     &.id {
       color: @blue;
     }
+
+    &.html {
+      color: @blue;
+    }
   }
+}
+
+.css {
+    &.property-name, &.attribute-name {
+      color: @gum-blue;
+    }
+    &.entity.tag.name {
+      color: @gum-purple;
+      text-decoration: none;
+    }
+    &.property-value {
+      color: @gum-red;
+    }
+    &.keyword.unit, &.numeric {
+      color: @gum-green;
+    }
 }
 
 .meta {
